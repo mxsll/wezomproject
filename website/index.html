@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__top">
+                <img src="img/wezom_logo 1.svg" alt="" class="header__logo">
+                <div class="header__info">
+                    <div class="menu">
+                        <ul>
+                            <li class="header__link">О Компании</li><div class="link__dot"></div>
+                            <li class="header__link">Политика конфиденциальности</li><div class="link__dot"></div>
+                            <li class="header__link">Доставка и оплата</li><div class="link__dot"></div>
+                            <li class="header__link">Гарантия</li>
+                        </ul>
+                        <div class="header__phone">+38 068 000 00 00 <img src="img/Path.svg" alt=""></div>
+                    </div>
+                    <div class="header__user">
+                        <div class="header__language">UA <div class="dot"></div> Ru</div>
+                        <div class="header__vhod">Войти</div>
+                        <img src="img/Vector.svg" class="header__user-logo">
+                    </div>
+                </div>
+                <div class="burger__btn"><span></span></div>
+            </div>
+            <div class="header__bottom">
+                <div class="katalog">
+                    <div class="katalog__burger"><span></span></div>
+                    <a href="" class="katalog__link">Каталог</a>
+                    <div class="katalog__all-kateg">Все категории</div>
+                </div>
+                <div class="burger__menu">
+                    <a class="burger__item" href="">
+                        <img src="img/power.svg" class="burger__img">
+                        <div class="burger__text">Турбины</div>
+                        <img src="img/burger_arrow.svg" class="burger__arrow">
+                    </a>
+                    <a class="burger__item" href="">
+                        <img src="img/cartridge.svg" class="burger__img">
+                        <div class="burger__text">Картриджи</div>
+                        <img src="img/burger_arrow.svg" class="burger__arrow">
+                    </a>
+                    <a class="burger__item" href="">
+                        <img src="img/geometry.svg" class="burger__img">
+                        <div class="burger__text">Геометрии</div>
+                        <img src="img/burger_arrow.svg" class="burger__arrow">
+                    </a>
+                    <a class="burger__item" href="">
+                        <img src="img/aktuator.svg" class="burger__img">
+                        <div class="burger__text">Актуаторы</div>
+                        <img src="img/burger_arrow.svg" class="burger__arrow">
+                    </a>
+                    <a class="burger__item" href="">
+                        <img src="img/servoprivod.svg" class="burger__img">
+                        <div class="burger__text">Сервоприводы</div>
+                        <img src="img/burger_arrow.svg" class="burger__arrow">
+                    </a>
+                    <a class="burger__item" href="">
+                        <img src="img/prokladki.svg" class="burger__img">
+                        <div class="burger__text">Прокладки</div>
+                        <img src="img/burger_arrow.svg" class="burger__arrow">
+                    </a>
+                    <a class="burger__item" href="">
+                        <img src="img/zap4asti.svg" class="burger__img">
+                        <div class="burger__text">Прочие запчасти</div>
+                        <img src="img/burger_arrow.svg" class="burger__arrow">
+                    </a>
+                    <a class="burger__item" href="">
+                        <img src="img/eleaktuator.svg" class="burger__img">
+                        <div class="burger__text">Электронно вакуумные актуаторы</div>
+                        <img src="img/burger_arrow.svg" class="burger__arrow">
+                    </a>
+                    <a class="burger__item" href="">
+                        <img src="img/body-tourbine.svg" class="burger__img">
+                        <div class="burger__text">Корпуса турбины</div>
+                        <img src="img/burger_arrow.svg" class="burger__arrow">
+                    </a>
+                    <a class="burger__item" href="">
+                        <img src="img/zap4astiserv.svg" class="burger__img">
+                        <div class="burger__text">Запчасти для сервопривода</div>
+                        <img src="img/burger_arrow.svg" class="burger__arrow">
+                    </a>
+                </div>
+                <div class="search">
+                    <input type="search" placeholder="Поиск, например “турбина”">
+                    <img src="img/search.svg" alt="" class="search__img">
+                </div>
+                <div class="header__group">
+                    <div class="balance"><img src="img/balance.svg" alt=""></div>
+                    <div class="like"><img src="img/like.svg" alt=""></div>
+                    <div class="basket__main"><img src="img/basket.svg" alt="">
+                        <div class="basket">
+                            <div class="basket__text">В корзине <b>3 товара </b><br> На сумму <b>30 000 ₴</b></div>
+                            <div class="basket__checkout">
+                                <p>Оформить заказ</p>
+                                <img src="img/basket.svg" alt="">
+                            </div>
+                            <a href="" class="basket__edit">Редактировать заказ</a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="kategories">
+            <div class="kategories__wrapper">
+             <div class="kategories__top">
+                 <div class="kategories__title">Популярные категории</div>
+                 <button class="kategories__button">Все категории</button>
+             </div>
+             <div class="kategories-slider swiper-container">
+                 <div class="kategories-slider__wrapper swiper-wrapper">
+                     <div class="kategories-slider__slide swiper-slide">
+                         <img src="img/kosmet.svg" alt="">
+                         <a href=""class="kategories-slide__text">Косметика и гигиена</a>
+                     </div>
+                     <div class="kategories-slider__slide swiper-slide even">
+                         <img src="img/tehn.svg" alt="">
+                         <a href=""class="kategories-slide__text">Техника и электроника</a>
+                     </div>
+                     <div class="kategories-slider__slide swiper-slide uneven">
+                         <img src="img/povse.svg" alt="">
+                         <a href=""class="kategories-slide__text">Повседневная одежда</a>
+                     </div>
+                     <div class="kategories-slider__slide swiper-slide even">
+                         <img src="img/odej.svg" alt="">
+                         <a href=""class="kategories-slide__text">Одежда и обувь</a>
+                     </div>
+                     <div class="kategories-slider__slide swiper-slide uneven">
+                         <img src="img/sapog.svg" alt="">
+                         <a href=""class="kategories-slide__text">Сапоги и туфли</a>
+                     </div>
+                 </div>
+                 </div>
+             </div>
+        </div>
+        <div class="carts">
+            <div class="carts__line">
+                <div class="carts__text">Тут должен быть какой то текст, потом придумаем какой точно будет =)</div>
+                <button class="carts__button">замовити зворотній зв’язок <img src="img/arrow.svg" alt=""></button>
+            </div>
+            <div class="carts__wrapper">
+                <div class="carts__cart">
+                    <div class="cart__text">Текст карточки первый</div>
+                    <div class="cart__time"> - 15 min</div>
+                </div>
+                <div class="carts__cart">
+                    <div class="cart__text">Текст карточки второй</div>
+                    <div class="cart__time"> - 20 min</div>
+                </div>
+                <div class="carts__cart">
+                    <div class="cart__text">Текст карточки третий</div>
+                    <div class="cart__time"> - 11 min</div>
+                </div>
+                <div class="carts__cart">
+                    <div class="cart__text">Текст карточки последний</div>
+                    <div class="cart__time"> - 9 min</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid__item">
+                <div class="grid__img equipment">
+                    <a href="" class="guns__title">Снаряжение</a>
+                </div>
+                <div class="grid__img weapon">
+                    <a href="" class="guns__title">Оружие</a>
+                </div>
+                <div class="grid__img ammo">
+                    <a href="" class="guns__title">Патроны</a>
+                </div>
+                <div class="grid__img accessories">
+                    <a href="" class="guns__title">Аксессуары</a>
+                </div>
+                <div class="grid__img knifes">
+                    <a href="" class="guns__title">Ножи и инструменты</a>
+                </div>
+                <div class="grid__img range">
+                    <a href="" class="guns__title">Тир</a>
+                </div>
+            </div>
+        </div>
+        <div class="guns-slider swiper-container">
+            <div class="guns-slider__wrapper swiper-wrapper">
+                <div class="guns__slide swiper-slide slide">
+                    <div class="slide__categorie slide__categorie_new">новинка</div>
+                    <div class="slide__product">
+                        <img src="img/guns.svg" alt="gun" class="slide__img">
+                        <img src="img/like1.svg" alt="like" class="slide__favourite">
+                        <img src="img/compare.svg" alt="compare" class="slide__compare">
+                        <img src="img/play.svg" alt="play" class="slide__play">
+                        <img src="img/gift-box.svg" alt="gift" class="slide__gift">
+                    </div>
+                    <div class="slide__title">
+                        <div class="slide__text">Ружье Mossberg 590M Mag-Fed </div>
+                        <div class="slide__reviews">
+                            <div class="simple-rating">
+                                <div class="simple-rating__items">
+                                    <input id="simple-rating__5" type="radio" class="simple-rating__item" value="5">
+                                    <label for="simple-rating__5" class="simple-rating__label"></label>
+                                    <input id="simple-rating__4" type="radio" class="simple-rating__item" value="4">
+                                    <label for="simple-rating__4" class="simple-rating__label"></label>
+                                    <input id="simple-rating__3" type="radio" class="simple-rating__item" value="3">
+                                    <label for="simple-rating__3" class="simple-rating__label"></label>
+                                    <input id="simple-rating__2" type="radio" class="simple-rating__item" value="2">
+                                    <label for="simple-rating__2" class="simple-rating__label"></label>
+                                    <input id="simple-rating__1" type="radio" class="simple-rating__item" value="1">
+                                    <label for="simple-rating__1" class="simple-rating__label"></label>
+                                </div>  
+                            </div>
+                            <div class="slide__review">10 отзывов</div>
+                        </div>
+                    </div>
+                    <div class="slide__price">
+                        <div class="old-price">32 509₴ <div class="line"></div></div>
+                        <div class="new-price">27 632.65₴</div>
+                        <div class="cart-price">
+                            <div class="cart-price__img"></div>
+                            <div class="cart-price__text">купить</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guns__slide swiper-slide slide">
+                    <div class="slide__categorie slide__categorie_stock">акция</div>
+                    <div class="slide__product">
+                        <img src="img/guns.svg" alt="gun" class="slide__img">
+                        <img src="img/like1.svg" alt="like" class="slide__favourite">
+                        <img src="img/compare.svg" alt="compare" class="slide__compare">
+                        <img src="img/play.svg" alt="play" class="slide__play">
+                        <img src="img/gift-box.svg" alt="gift" class="slide__gift">
+                    </div>
+                    <div class="slide__title">
+                        <div class="slide__text">Ружье Mossberg 590M Mag-Fed </div>
+                        <div class="slide__reviews">
+                            <div class="simple-rating">
+                                <div class="simple-rating__items">
+                                    <input id="simple-rating__5" type="radio" class="simple-rating__item" value="5">
+                                    <label for="simple-rating__5" class="simple-rating__label"></label>
+                                    <input id="simple-rating__4" type="radio" class="simple-rating__item" value="4">
+                                    <label for="simple-rating__4" class="simple-rating__label"></label>
+                                    <input id="simple-rating__3" type="radio" class="simple-rating__item" value="3">
+                                    <label for="simple-rating__3" class="simple-rating__label"></label>
+                                    <input id="simple-rating__2" type="radio" class="simple-rating__item" value="2">
+                                    <label for="simple-rating__2" class="simple-rating__label"></label>
+                                    <input id="simple-rating__1" type="radio" class="simple-rating__item" value="1">
+                                    <label for="simple-rating__1" class="simple-rating__label"></label>
+                                </div>  
+                            </div>
+                            <div class="slide__review">2 отзыва</div>
+                        </div>
+                    </div>
+                    <div class="slide__price">
+                        <div class="old-price">32 509₴ <div class="line"></div></div>
+                        <div class="new-price">27 632.65₴</div>
+                        <div class="cart-price">
+                            <div class="cart-price__img"></div>
+                            <div class="cart-price__text">купить</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guns__slide swiper-slide slide">
+                    <div class="slide__categorie slide__categorie_discount">-70%</div>
+                    <div class="slide__product">
+                        <img src="img/guns.svg" alt="gun" class="slide__img">
+                        <img src="img/like1.svg" alt="like" class="slide__favourite">
+                        <img src="img/compare.svg" alt="compare" class="slide__compare">
+                        <img src="img/play.svg" alt="play" class="slide__play">
+                        <img src="img/gift-box.svg" alt="gift" class="slide__gift">
+                    </div>
+                    <div class="slide__title">
+                        <div class="slide__text">Ружье Mossberg 590M Mag-Fed </div>
+                        <div class="slide__reviews">
+                            <div class="simple-rating">
+                                <div class="simple-rating__items">
+                                    <input id="simple-rating__5" type="radio" class="simple-rating__item" value="5">
+                                    <label for="simple-rating__5" class="simple-rating__label"></label>
+                                    <input id="simple-rating__4" type="radio" class="simple-rating__item" value="4">
+                                    <label for="simple-rating__4" class="simple-rating__label"></label>
+                                    <input id="simple-rating__3" type="radio" class="simple-rating__item" value="3">
+                                    <label for="simple-rating__3" class="simple-rating__label"></label>
+                                    <input id="simple-rating__2" type="radio" class="simple-rating__item" value="2">
+                                    <label for="simple-rating__2" class="simple-rating__label"></label>
+                                    <input id="simple-rating__1" type="radio" class="simple-rating__item" value="1">
+                                    <label for="simple-rating__1" class="simple-rating__label"></label>
+                                </div>  
+                            </div>
+                            <div class="slide__review">12 отзывов</div>
+                        </div>
+                    </div>
+                    <div class="slide__price">
+                        <div class="old-price">32 509₴ <div class="line"></div></div>
+                        <div class="new-price">27 632.65₴</div>
+                        <div class="cart-price">
+                            <div class="cart-price__img"></div>
+                            <div class="cart-price__text">купить</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guns__slide swiper-slide slide">
+                    <div class="slide__categorie slide__categorie_top-sales">топ продаж</div>
+                    <div class="slide__product">
+                        <img src="img/guns.svg" alt="gun" class="slide__img">
+                        <img src="img/like1.svg" alt="like" class="slide__favourite">
+                        <img src="img/compare.svg" alt="compare" class="slide__compare">
+                        <img src="img/play.svg" alt="play" class="slide__play">
+                        <img src="img/gift-box.svg" alt="gift" class="slide__gift">
+                    </div>
+                    <div class="slide__title">
+                        <div class="slide__text">Ружье Mossberg 590M Mag-Fed </div>
+                        <div class="slide__reviews">
+                            <div class="simple-rating">
+                                <div class="simple-rating__items">
+                                    <input id="simple-rating__5" type="radio" class="simple-rating__item" value="5">
+                                    <label for="simple-rating__5" class="simple-rating__label"></label>
+                                    <input id="simple-rating__4" type="radio" class="simple-rating__item" value="4">
+                                    <label for="simple-rating__4" class="simple-rating__label"></label>
+                                    <input id="simple-rating__3" type="radio" class="simple-rating__item" value="3">
+                                    <label for="simple-rating__3" class="simple-rating__label"></label>
+                                    <input id="simple-rating__2" type="radio" class="simple-rating__item" value="2">
+                                    <label for="simple-rating__2" class="simple-rating__label"></label>
+                                    <input id="simple-rating__1" type="radio" class="simple-rating__item" value="1">
+                                    <label for="simple-rating__1" class="simple-rating__label"></label>
+                                </div>  
+                            </div>
+                            <div class="slide__review">46 отзывов</div>
+                        </div>
+                    </div>
+                    <div class="slide__price">
+                        <div class="old-price">32 509₴ <div class="line"></div></div>
+                        <div class="new-price">27 632.65₴</div>
+                        <div class="cart-price">
+                            <div class="cart-price__img"></div>
+                            <div class="cart-price__text">купить</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guns__slide swiper-slide slide">
+                    <div class="slide__categorie slide__categorie_new">новинка</div>
+                    <div class="slide__product">
+                        <img src="img/guns.svg" alt="gun" class="slide__img">
+                        <img src="img/like1.svg" alt="like" class="slide__favourite">
+                        <img src="img/compare.svg" alt="compare" class="slide__compare">
+                        <img src="img/play.svg" alt="play" class="slide__play">
+                        <img src="img/gift-box.svg" alt="gift" class="slide__gift">
+                    </div>
+                    <div class="slide__title">
+                        <div class="slide__text">Ружье Mossberg 590M Mag-Fed </div>
+                        <div class="slide__reviews">
+                            <div class="simple-rating">
+                                <div class="simple-rating__items">
+                                    <input id="simple-rating__5" type="radio" class="simple-rating__item" value="5">
+                                    <label for="simple-rating__5" class="simple-rating__label"></label>
+                                    <input id="simple-rating__4" type="radio" class="simple-rating__item" value="4">
+                                    <label for="simple-rating__4" class="simple-rating__label"></label>
+                                    <input id="simple-rating__3" type="radio" class="simple-rating__item" value="3">
+                                    <label for="simple-rating__3" class="simple-rating__label"></label>
+                                    <input id="simple-rating__2" type="radio" class="simple-rating__item" value="2">
+                                    <label for="simple-rating__2" class="simple-rating__label"></label>
+                                    <input id="simple-rating__1" type="radio" class="simple-rating__item" value="1">
+                                    <label for="simple-rating__1" class="simple-rating__label"></label>
+                                </div>  
+                            </div>
+                            <div class="slide__review">10 отзывов</div>
+                        </div>
+                    </div>
+                    <div class="slide__price">
+                        <div class="old-price">32 509₴ <div class="line"></div></div>
+                        <div class="new-price">27 632.65₴</div>
+                        <div class="cart-price">
+                            <div class="cart-price__img"></div>
+                            <div class="cart-price__text">купить</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guns__slide swiper-slide slide">
+                    <div class="slide__categorie slide__categorie_stock">акция</div>
+                    <div class="slide__product">
+                        <img src="img/guns.svg" alt="gun" class="slide__img">
+                        <img src="img/like1.svg" alt="like" class="slide__favourite">
+                        <img src="img/compare.svg" alt="compare" class="slide__compare">
+                        <img src="img/play.svg" alt="play" class="slide__play">
+                        <img src="img/gift-box.svg" alt="gift" class="slide__gift">
+                    </div>
+                    <div class="slide__title">
+                        <div class="slide__text">Ружье Mossberg 590M Mag-Fed </div>
+                        <div class="slide__reviews">
+                            <div class="simple-rating">
+                                <div class="simple-rating__items">
+                                    <input id="simple-rating__5" type="radio" class="simple-rating__item" value="5">
+                                    <label for="simple-rating__5" class="simple-rating__label"></label>
+                                    <input id="simple-rating__4" type="radio" class="simple-rating__item" value="4">
+                                    <label for="simple-rating__4" class="simple-rating__label"></label>
+                                    <input id="simple-rating__3" type="radio" class="simple-rating__item" value="3">
+                                    <label for="simple-rating__3" class="simple-rating__label"></label>
+                                    <input id="simple-rating__2" type="radio" class="simple-rating__item" value="2">
+                                    <label for="simple-rating__2" class="simple-rating__label"></label>
+                                    <input id="simple-rating__1" type="radio" class="simple-rating__item" value="1">
+                                    <label for="simple-rating__1" class="simple-rating__label"></label>
+                                </div>  
+                            </div>
+                            <div class="slide__review">2 отзыва</div>
+                        </div>
+                    </div>
+                    <div class="slide__price">
+                        <div class="old-price">32 509₴ <div class="line"></div></div>
+                        <div class="new-price">27 632.65₴</div>
+                        <div class="cart-price">
+                            <div class="cart-price__img"></div>
+                            <div class="cart-price__text">купить</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guns__slide swiper-slide slide">
+                    <div class="slide__categorie slide__categorie_discount">-70%</div>
+                    <div class="slide__product">
+                        <img src="img/guns.svg" alt="gun" class="slide__img">
+                        <img src="img/like1.svg" alt="like" class="slide__favourite">
+                        <img src="img/compare.svg" alt="compare" class="slide__compare">
+                        <img src="img/play.svg" alt="play" class="slide__play">
+                        <img src="img/gift-box.svg" alt="gift" class="slide__gift">
+                    </div>
+                    <div class="slide__title">
+                        <div class="slide__text">Ружье Mossberg 590M Mag-Fed </div>
+                        <div class="slide__reviews">
+                            <div class="simple-rating">
+                                <div class="simple-rating__items">
+                                    <input id="simple-rating__5" type="radio" class="simple-rating__item" value="5">
+                                    <label for="simple-rating__5" class="simple-rating__label"></label>
+                                    <input id="simple-rating__4" type="radio" class="simple-rating__item" value="4">
+                                    <label for="simple-rating__4" class="simple-rating__label"></label>
+                                    <input id="simple-rating__3" type="radio" class="simple-rating__item" value="3">
+                                    <label for="simple-rating__3" class="simple-rating__label"></label>
+                                    <input id="simple-rating__2" type="radio" class="simple-rating__item" value="2">
+                                    <label for="simple-rating__2" class="simple-rating__label"></label>
+                                    <input id="simple-rating__1" type="radio" class="simple-rating__item" value="1">
+                                    <label for="simple-rating__1" class="simple-rating__label"></label>
+                                </div>  
+                            </div>
+                            <div class="slide__review">12 отзывов</div>
+                        </div>
+                    </div>
+                    <div class="slide__price">
+                        <div class="old-price">32 509₴ <div class="line"></div></div>
+                        <div class="new-price">27 632.65₴</div>
+                        <div class="cart-price">
+                            <div class="cart-price__img"></div>
+                            <div class="cart-price__text">купить</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guns__slide swiper-slide slide">
+                    <div class="slide__categorie slide__categorie_top-sales">топ продаж</div>
+                    <div class="slide__product">
+                        <img src="img/guns.svg" alt="gun" class="slide__img">
+                        <img src="img/like1.svg" alt="like" class="slide__favourite">
+                        <img src="img/compare.svg" alt="compare" class="slide__compare">
+                        <img src="img/play.svg" alt="play" class="slide__play">
+                        <img src="img/gift-box.svg" alt="gift" class="slide__gift">
+                    </div>
+                    <div class="slide__title">
+                        <div class="slide__text">Ружье Mossberg 590M Mag-Fed </div>
+                        <div class="slide__reviews">
+                            <div class="simple-rating">
+                                <div class="simple-rating__items">
+                                    <input id="simple-rating__5" type="radio" class="simple-rating__item" value="5">
+                                    <label for="simple-rating__5" class="simple-rating__label"></label>
+                                    <input id="simple-rating__4" type="radio" class="simple-rating__item" value="4">
+                                    <label for="simple-rating__4" class="simple-rating__label"></label>
+                                    <input id="simple-rating__3" type="radio" class="simple-rating__item" value="3">
+                                    <label for="simple-rating__3" class="simple-rating__label"></label>
+                                    <input id="simple-rating__2" type="radio" class="simple-rating__item" value="2">
+                                    <label for="simple-rating__2" class="simple-rating__label"></label>
+                                    <input id="simple-rating__1" type="radio" class="simple-rating__item" value="1">
+                                    <label for="simple-rating__1" class="simple-rating__label"></label>
+                                </div>  
+                            </div>
+                            <div class="slide__review">46 отзывов</div>
+                        </div>
+                    </div>
+                    <div class="slide__price">
+                        <div class="old-price">32 509₴ <div class="line"></div></div>
+                        <div class="new-price">27 632.65₴</div>
+                        <div class="cart-price">
+                            <div class="cart-price__img"></div>
+                            <div class="cart-price__text">купить</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__left">
+                    <img src="img/wezom_logo white.svg" alt="" class="footer__logo">
+                    <div class="footer__soc-network">
+                        <img src="img/instagram.svg" alt="instagramm" class="footer__inst">
+                        <img src="img/facebook.svg" alt="facebook" class="footer__facebook">
+                        <img src="img/twitter.svg" alt="twitter" class="footer__twitter">
+                        <img src="img/youtube.svg" alt="youtube" class="footer__youtube">
+                    </div>
+                    <div class="footer__delivery">
+                        <img src="img/nova_poshta.svg" alt="nova-poshta">
+                        <div class="footer__credit-cards">
+                            <img src="img/visa.svg" alt="">
+                            <img src="img/mastercart.svg" alt="">
+                            <img src="img/maestro.svg" alt="">
+                            <img src="img/paypal.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__faq">
+                    <div class="footer__title">Каталог</div>
+                    <div class="footer__text">
+                        <p>Ноутбуки</p>
+                        <p>Планшеты</p>
+                        <p>Аксессуары для планшетов и электронных книг</p>
+                        <p>Кабели и переходники</p>
+                        <p>Сумки для ноутбуков</p>
+                        <p>Автотовары</p>
+                        <p>Сантехника</p>
+                        <p>Ремонт</p>
+                    </div>
+                </div>
+                <div class="footer__faq">
+                    <div class="footer__title">Клиентам</div>
+                    <div class="footer__text">
+                        <p>Политика конфиденциальности</p>
+                        <p>Доставка и оплата</p>
+                        <p>Способы оплаты</p>
+                        <p>Гарантия</p>
+                        <p>Регенерация турбины</p>
+                        <p>Контакты</p>
+                    </div>
+                </div>
+                <div class="footer__hotline">
+                    <div class="footer__title">Горячая линия</div>
+                    <div class="footer__main-number">0 800 000 000</div>
+                    <div class="footer__numbers">
+                        <p>+38 068 000 00 00</p>
+                        <p>+38 099 000 00 00</p>
+                        <p>+38 096 000 00 00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cookie" class="cookie">
+            <div class="cookie__body">
+                <div class="cookie__content">
+                    <div class="cookie__text">Этот сайт использует файлы cookies для более комфортной работы пользователя. Продолжая просмотр страниц сайта, вы соглашаетесь с использованием файлов cookies. Если вам нужна дополнительная информация или вы не хотите соглашаться с использованием cookies, пожалуйста, посетите страницу "<a href="">Про cookies</a>"</div>
+                    <button class="cookie__close" onclick="document.getElementById('cookie').style.display='none';">Согласен</button>
+                </div>
+            </div>   
+        </div>
+        <div id="search" class="popup-search">
+            <div class="popup-search__body">
+                <div class="popup-search__content">
+                    <input type="search" placeholder="Поиск, например “турбина”">
+                    <input type="submit" value="">
+                    <button class="popup-search__close" onclick="document.getElementById('search').style.display='none';">
+                        <img src="img/footer/close.svg" alt="close">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="back-to-top">
+            <div class="arrow-up">
+                <img src="img/arrow-up.svg" alt="">
+            </div>
+            <p class="back-to-top__text">Вверх</p>
+        </a>
+    </div>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
